@@ -1,0 +1,38 @@
+.contact {
+  position: fixed;
+  z-index: 23445666;
+  top: 50%;
+  right: 25px;
+  display: flex;
+  flex-direction: column;
+}
+.contact :where(div) {
+  padding: 10px;
+  border-radius: 50%;
+  font-size: 25px;
+  margin: 2px;
+}
+.icon-whatsapp {
+  color: #ffffff;
+  background-color: #30bf39;
+}
+.icon-instagram {
+  color: #ffffff;
+  background-color: #f7016c;
+}
+.icon-facebook2 {
+  color: #149ff9;
+  background-color: #ffffff;
+}
+.icon-location {
+  color: #ea4335;
+  background-color: #363636;
+}
+.icon-phone {
+  color: #30bf39;
+  background-color: #c9c9c9;
+}
+
+a {
+  text-decoration: none;
+}

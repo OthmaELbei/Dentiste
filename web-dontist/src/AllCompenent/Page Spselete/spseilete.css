@@ -1,0 +1,29 @@
+.parent {
+  background-color: black;
+  /* height: 100vh; */
+  position: relative;
+}
+.parent::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: #5196ce4d;
+}
+.PImplantologie {
+  padding: 200px 30px;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+}
+.PImplantologie div {
+  font-size: clamp(1rem, 16px, 3rem);
+  line-height: 1.6;
+  z-index: 23;
+  padding: 20px;
+  color: #fafcfe;
+}

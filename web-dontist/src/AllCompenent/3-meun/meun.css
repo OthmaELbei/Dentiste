@@ -1,0 +1,110 @@
+.pjPresn {
+  background-color: #fafcfe;
+  overflow: hidden;
+}
+
+.prentmeun {
+  padding-top: 0px;
+  padding-bottom: 20px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+}
+.prentmeun .text {
+  flex-basis: 50%;
+  width: 100%;
+  padding: 20px;
+  height: 100%;
+  margin-left: 100px;
+}
+
+.prentmeun .text p {
+  line-height: 1.7;
+  font-size: clamp(1rem, 15px, 2rem);
+  font-weight: 500;
+  color: #000000;
+  padding: 20px;
+  letter-spacing: 1px;
+}
+.prentmeun .text p h4 {
+  line-height: 2;
+  font-size: 24px;
+  font-weight: bold;
+  letter-spacing: 2px;
+  color: #5196ce;
+}
+.prentmeun .imgss {
+  position: relative;
+  width: clamp(37%, 300px, 30rem);
+}
+.prentmeun .imgss img {
+  width: clamp(100%, 300vw, 6rem);
+  height: 500px;
+  margin-right: 50px;
+  flex-basis: 45%;
+  border-radius: 5px;
+}
+.prentmeun .imgss:after {
+  content: "";
+  width: 90%;
+  height: 90%;
+  position: absolute;
+  border-radius: 5px;
+  top: 5%;
+  left: 5%;
+  right: 5%;
+  background-color: transparent;
+  border: 1px solid rgb(255, 255, 255);
+}
+.prentmeun .imgss::before {
+  content: "Dr. KAISS Soukaïna";
+  position: absolute;
+  border-radius: 5px;
+  top: 70%;
+  left: 2%;
+  right: 2%;
+  padding: 10px 20px;
+  font-size: 30px;
+  font-weight: 500;
+  color: rgb(255, 255, 255);
+  background-color: transparent;
+  letter-spacing: 5px;
+  z-index: 12;
+}
+@media (max-width: 1238px) {
+  .prentmeun .text {
+    flex-basis: 60%;
+    width: 100%;
+    padding: 0px;
+    height: 100%;
+    margin-left: 60px;
+  }
+  .prentmeun .imgss img {
+    /* width: 300px;
+    height: 400px;
+
+    margin-right: 20px;
+    flex-basis: 27%;
+    border: 10px double #5196ce;
+    border-radius: 20px; */
+  }
+}
+@media (max-width: 1118px) {
+  .prentmeun .text {
+    flex-basis: 100%;
+    width: 100%;
+    padding: 20px 0px;
+    height: 100%;
+    margin-left: 10px;
+  }
+}
+@media (max-width: 958px) {
+  .prentmeun .text p h4 {
+    line-height: 1.5;
+    font-size: clamp(1.2rem, 4vw, 6rem);
+    font-weight: bold;
+    letter-spacing: 1.2px;
+    color: #5196ce;
+  }
+}

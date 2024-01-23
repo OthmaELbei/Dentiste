@@ -1,0 +1,98 @@
+.prittionNav {
+  max-width: 100%;
+  height: 100vh;
+  position: relative;
+
+}
+.prittionNav img {
+  width: 100%;
+  height: 100vh;
+}
+.mySwiper .swiper-button-next,
+.mySwiper .swiper-button-prev {
+  display: none;
+}
+
+.prittionNav::after {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  background-color: #5196ce4d;
+  z-index: 1;
+}
+.mySwiper .prittionNav {
+  transition: 1s !important;
+}
+
+.parnNav .prTitle {
+  display: flex;
+}
+.parnNav .prTitle .Title {
+  display: flex;
+  position: absolute;
+  flex-basis: 40%;
+  top: 30%;
+  width: 60%;
+  z-index: 48;
+  /* margin-left: 100px; */
+  height: 100%;
+}
+.parnNav .prTitle .Title h1 {
+  position: absolute;
+  z-index: 34;
+  font-size: clamp(2.5rem, 15vw, 6rem);
+  font-weight: bold;
+  letter-spacing: 4px;
+  color: #5196ce;
+  top: 0%;
+
+  /* transform: translate(-50%, -50%); */
+}
+
+.parnNav .prTitle .Title h1 span {
+  color: #000000;
+}
+
+.parnNav .prTitle .Title h3 {
+  position: absolute;
+  z-index: 34;
+  font-size: clamp(1.5rem, 6vw, 3rem);
+  font-weight: bold;
+  letter-spacing: 2px;
+  top: 28%;
+  padding: 10px 0;
+  color: #fafcfe;
+
+  /* width: 100%; */
+}
+.parnNav .prTitle .Title h5 {
+  position: absolute;
+  z-index: 348;
+  font-size: clamp(1.5rem, 5vw, 3rem);
+  font-weight: bold;
+  letter-spacing: 3px;
+  top: 39%;
+  padding: 15px 0;
+  left: 0;
+  color: #000000;
+  width: 100%;
+}
+.parnNav .prTitle .Title h6 {
+  position: absolute;
+  z-index: 458;
+  font-size: clamp(1rem, 2.1vw, 3rem);
+  font-weight: 800;
+  letter-spacing: 1px;
+  top: 52%;
+  left: 0;
+  color: #fafcfe;
+  width: 100%;
+  text-transform: capitalize;
+}
+/* @media (max-width: 558px) {
+  .mNav {
+  }
+} */
